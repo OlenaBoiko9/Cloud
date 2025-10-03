@@ -1,0 +1,20 @@
+@import
+  'normalize',
+  'fonts',
+  'mixins',
+  'media',
+  'variables',
+  'utils',
+  'globals';
+
+@import
+    'blocks/button',
+    'blocks/burger-button',
+    'blocks/actions-form',
+    'blocks/first-screen',
+    'blocks/header',
+    'blocks/cross-button',
+    'blocks/mobile-overlay',
+    'blocks/sections',
+    'blocks/hero';
+    

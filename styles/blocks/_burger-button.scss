@@ -1,0 +1,46 @@
+.burger-button {
+  @include reset-button;
+  @include square(38px);
+ 
+  position: relative;
+  border-radius: 8px;
+  background: var(--gradient-primary); 
+  height: 38px;
+  
+  
+  &::after{
+    @include abs-center;
+
+    content: '';
+    width: 50%;
+    height: 2px;
+    background: var(--color-light);
+    color: var(--color-light);
+    border-radius: 5px;
+    box-shadow: 0 -8px, 0 8px;
+  }
+  @media (max-width: 768px) {
+    display: block;
+  }
+
+  @media (min-width: 769px) {
+    display: none;
+  }
+}
+.visible-mobile {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block !important; 
+  }
+}
+
+
+
+
+  
+
+
+
+  
+

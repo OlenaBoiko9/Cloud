@@ -1,0 +1,31 @@
+.button {
+@include flex-center(true);
+
+  height: var(--button-height);
+  padding-inline: 40px;
+  font-size: 14px;
+  color: var(--color-light);
+  background: var( --gradient-primary);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  max-width: 163px;
+
+
+ @include desktop {
+   height: 42px;
+  }
+
+  @include mobile {
+    height: 38px;
+  }
+ @include hover {
+    color: var(--color-dark);
+    background: var(--color-light-green);
+  }
+
+&__transparent {
+  max-width: 129px;
+}
+
+}
+
