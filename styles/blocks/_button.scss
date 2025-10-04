@@ -18,6 +18,8 @@
   @include mobile {
     height: 38px;
   }
+
+
  @include hover {
     color: var(--color-dark);
     background: var(--color-light-green);
@@ -26,6 +28,10 @@
 &__transparent {
   max-width: 129px;
 }
+@include mobile-s {
+  padding-inline: 15px;
+  max-width: 102px;
+  }
 
 }
 

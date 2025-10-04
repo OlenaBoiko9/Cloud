@@ -3,11 +3,6 @@
   flex-direction: column;
   row-gap: var(--section-padding-y);
 
-
-  @include desktop {
-    row-gap: 60px;
-  }
-
   &__main {
     display: flex;
     justify-content: space-between;
@@ -16,6 +11,8 @@
 
     @include mobile {
       flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
   }
 
@@ -25,19 +22,29 @@
     align-items: start;
     max-width: 470px;
     row-gap: 20px;
-    padding-top: 110px;
+    padding-top: 92px;
 
-    @include mobile {
-      display: contents;
+    @include tablet {
+    row-gap: 10px;
+    padding-top: 42px;
     }
+    @include mobile {
+    row-gap: 15px;
+    padding-top: 10px;
+    max-width: 766px;
   }
+}
 
   &__title {
-    @include mobile {
-      order: -2;
-      margin-bottom: 10px;
    
+    @include desktop {
+    font-size: 38px;
     }
+
+    @include tablet {
+    font-size: 26px;
+    }
+
   }
 
   &__description {
@@ -45,18 +52,39 @@
     line-height: 1.1;
     letter-spacing: -0.54px;
     
-    
-
-    @include mobile {
-      margin-bottom: 40px;
+    @include desktop {
+    font-size: 16px;
     }
   }
 
   &__button {
     @include mobile {
       width: 100%;
-      max-width: 390px;
+      max-width: 160px;
       margin-inline: auto;
     }
+    @include mobile-s {
+    max-width: 108px;
+    padding-inline: 14px;
+    }
   }
-}
+  
+  &__image {
+    @include desktop {
+    height: 440px;
+    }
+
+    @include tablet {
+    height: 340px ;
+    }
+    
+    @include mobile-s {
+    height: 298px ;
+    }
+    }
+  }
+
+
+
+
+
