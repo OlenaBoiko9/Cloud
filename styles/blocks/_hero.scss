@@ -9,11 +9,12 @@
     align-items: start;
     column-gap: 30px;
 
-    @include mobile {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
+    @include desktop {
+        column-gap: 20px;
+      }
+      @include mobile {
+        flex-direction: column;
+      }
   }
 
   &__body {
@@ -22,69 +23,55 @@
     align-items: start;
     max-width: 470px;
     row-gap: 20px;
-    padding-top: 92px;
+    padding-top: 88px;
 
-    @include tablet {
-    row-gap: 10px;
-    padding-top: 42px;
-    }
-    @include mobile {
-    row-gap: 15px;
-    padding-top: 10px;
-    max-width: 766px;
+     @include tablet {
+        row-gap: 15px;
+      }
+     @include tablet {
+        padding-top: 48px;
+      }
+       @include mobile {
+        align-items: center;
+        text-align: center;
+        padding: 12px;
+    } 
   }
-}
 
   &__title {
-   
     @include desktop {
-    font-size: 38px;
-    }
+        font-size: 36px;
+      }
 
     @include tablet {
-    font-size: 26px;
-    }
-
+        font-size: 28px;
+      }  
   }
 
   &__description {
     font-size: 18px;
     line-height: 1.1;
     letter-spacing: -0.54px;
-    
+
     @include desktop {
-    font-size: 16px;
-    }
+        font-size: 16px;
+      }
+
+     @include tablet {
+        font-size: 14px;
+      }  
   }
 
-  &__button {
-    @include mobile {
-      width: 100%;
-      max-width: 160px;
-      margin-inline: auto;
-    }
-    @include mobile-s {
-    max-width: 108px;
-    padding-inline: 14px;
-    }
-  }
-  
   &__image {
     @include desktop {
-    height: 440px;
-    }
+        height: 400px;
+      }
 
-    @include tablet {
-    height: 340px ;
+       @include tablet {
+        height: 300px;
+      }
     }
-    
-    @include mobile-s {
-    height: 298px ;
-    }
-    }
-  }
-
-
+}
 
 
 

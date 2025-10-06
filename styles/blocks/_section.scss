@@ -1,0 +1,133 @@
+.section {
+  padding-block: var(--section-padding-y);
+  position: relative;
+
+    @include mobile {
+      padding-block: 15px;
+    }
+
+  &__decor {
+   position: absolute;
+   opacity: 1;
+   pointer-events: none;
+   user-select: none;
+
+  &-small {
+   top: 46px;
+   right: 75px;
+   width: 100%; 
+   max-width: 125px; 
+   height: 125px;
+   z-index: -1;
+
+   @include desktop {   
+    right: 0;
+    max-width: 110px;
+    height: 110px;
+   }
+
+   @include tablet {
+    display: none;
+   }
+  }
+
+   &-big {
+   top: -75px;
+   left: 136px;
+   width: 100%; 
+   max-width: 244px;
+   height: 244px;
+   opacity: 1;
+   z-index: 1;
+
+   @include desktop {
+    left: 74px;
+    max-width: 230px;
+    height: 230px;
+   }
+
+   @include tablet {
+    display: none;
+   }
+  }
+  }
+  
+  &--hidden-x {
+    overflow-x: hidden;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+    margin-top: -52px;
+
+    @include desktop {
+      row-gap: 12px;
+    }
+  
+    @include tablet {
+      row-gap: 6px;
+    }
+  
+
+    &-features,
+    &-numbers {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 6px 16px;
+      font-size: 12px;
+      font-weight: 500;
+      height: 22px; 
+      background-color: var(--color-light-blue);
+      border: none;
+      border-radius: 36px;
+      color: var(--color-accent);
+      text-decoration: none;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      transition: all var(--transition-duration);
+      margin-bottom: 10px;
+
+      &-features {
+      max-width: 70px;
+
+      @include tablet {
+        font-size: 8px;
+        text-transform: uppercase;
+      }
+    }
+
+    &-numbers {
+      max-width: 85px;
+    }
+    }
+    
+    &:hover {
+        color: var(--color-dark);
+      }
+    }
+
+  &__title {
+    font-weight: 700;
+    color: var(--color-dark-gray);
+
+    @include tablet {
+      font-size: 16px;
+    }
+  }
+
+  &__description,
+  &__description-number {
+    font-weight: 500;
+    color: var(--color-light-gray);
+    text-align: center;
+    margin-bottom: 30px;
+
+    @include tablet {
+      font-size: 14px;
+    }
+  }
+}
+

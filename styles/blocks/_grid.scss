@@ -1,0 +1,32 @@
+.grid {
+    --gridColumns: 3;
+
+    display: grid;
+    grid-template-columns: repeat(var(--gridColumns), 1fr);
+    gap: 30px;
+
+    @include desktop {
+        gap: 22px;
+      }
+
+    @include tablet {
+        gap: 10px;
+      }  
+      @include mobile {
+        --gridColumns: 1;
+      }
+    &-numbers {
+        --gridColumns: 4;
+
+    display: grid;
+    grid-template-columns: repeat(var(--gridColumns), 1fr);
+    gap: 30px;
+
+    @include mobile {
+        --gridColumns: 2;
+      }
+    }
+}
+
+
+

@@ -1,0 +1,9 @@
+.numbers {
+&__list {
+    margin-bottom: 60px;
+
+     @include tablet {
+            margin-bottom: 30px;
+        }
+}
+}

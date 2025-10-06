@@ -10,15 +10,11 @@
   border-radius: var(--border-radius);
   max-width: 163px;
 
-
- @include desktop {
-   height: 42px;
-  }
-
-  @include mobile {
-    height: 38px;
-  }
-
+   @include tablet {
+        height: 38px;
+        max-width: 108px;
+        padding-inline: 14px;
+      }
 
  @include hover {
     color: var(--color-dark);
@@ -27,11 +23,10 @@
 
 &__transparent {
   max-width: 129px;
-}
-@include mobile-s {
-  padding-inline: 15px;
-  max-width: 102px;
-  }
 
+  @include tablet {
+        max-width: 102px;
+      }
+}
 }
 

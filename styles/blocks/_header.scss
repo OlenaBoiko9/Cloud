@@ -1,5 +1,9 @@
 .header {
-  padding-top: 20px;
+  padding-top: 30px;
+
+  @include tablet {
+    padding-top: 20px;
+  }
 
   @include mobile {
     padding-top: 15px;
@@ -11,33 +15,27 @@
     justify-content: space-between;
     column-gap: 58px;
 
-    @include tablet {
+    @include desktop {
       column-gap: 30px;
-    }
-  }
-
-  &__logo {
-    @include tablet {
-      max-width: 120px;
     }
 
     @include mobile {
-      max-width: 101px;
+      column-gap: 14px;
     }
   }
-
+   &__logo {
+    @include tablet {
+    max-width: 101px;
+    height: 31px;
+  }
+  }
   &__menu {
     margin-right: auto;
     font-family: var(--font-family-accent);
 
-    @include desktop {
-      font-size: 16px;
+    @include mobile {
+      display: none;
     }
-
-    @include tablet {
-      font-size: 14px;
-    }
-
     @media (max-width: 768px) {
     display: none;
     }
@@ -48,9 +46,12 @@
       column-gap: 58px;
 
       @include desktop {
-        column-gap: 20px;
+        column-gap: 30px;
       }
-    }
+
+       @include tablet {
+         column-gap: 20px;
+      }
 
     &-link {
       position: relative;
@@ -76,7 +77,6 @@
         transition-duration: inherit;
       }
     }
-  }
-
+  }  
 }
-
+}

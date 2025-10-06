@@ -3,20 +3,15 @@
   height: 694px;
   background: url('../images/background1.png') center/cover no-repeat;
 
-   @include desktop {
-    height: 616px;
-   }
-
-   @include tablet {
-    height: 492px;
-   }
-   
-   @include mobile {
-    height: 520px;
-   }
-
-   @include mobile-s {
-    height: 442px;
-   }
+  @include desktop {
+        height: 610px;
+      }
+  
+  @include tablet {
+        height: 456px;
+      } 
+      @include mobile {
+        height: 375px;
+      }
 }
 
