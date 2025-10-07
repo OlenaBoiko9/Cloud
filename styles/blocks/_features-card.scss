@@ -26,6 +26,9 @@
         @include tablet {
         font-size: 18px;
         }
+        @include mobile {
+        padding-bottom: 5px;
+        }
         }
 
     &__description {
@@ -36,6 +39,9 @@
         @include desktop {
         font-size: 12px;
       }
+        @include mobile {
+        font-size: 14px;
+        }
     }
 }
 

@@ -11,6 +11,9 @@
         padding: 14px 4px;
     }
 
+    @include mobile {
+        min-height: 66px;
+    }
 
      &__title {
         font-size: 30px;
@@ -26,6 +29,10 @@
         @include tablet {
             font-size: 22px;
         }
+
+        @include mobile {
+            font-size: 30px;
+        }
         }
 
     &__description {
@@ -35,6 +42,10 @@
 
         @include tablet {
             font-size: 16px;
+        }
+
+        @include mobile {
+            font-size: 14px;
         }
     }
 }

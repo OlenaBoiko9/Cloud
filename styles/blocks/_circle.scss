@@ -16,5 +16,8 @@
   @include desktop {
        width: 45px;
        height: 45px;
-    }  
+    } 
+  @include mobile {
+    margin: 0px auto 5px;
+  } 
 }

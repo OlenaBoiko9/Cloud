@@ -71,6 +71,9 @@
       row-gap: 6px;
     }
   
+    @include mobile {
+      margin-top: 154px;
+    }
 
     &-features,
     &-numbers {
@@ -90,19 +93,31 @@
       transition: all var(--transition-duration);
       margin-bottom: 10px;
 
+       @include tablet {
+        font-size: 8px;
+      }
+
+      @include mobile {
+        padding: 5px 8px;
+        max-width: 64px;
+      }
+
       &-features {
       max-width: 70px;
 
-      @include tablet {
-        font-size: 8px;
+      @include mobile {
         text-transform: uppercase;
       }
-    }
 
-    &-numbers {
+      }
+      &-numbers {
       max-width: 85px;
-    }
-    }
+
+      @include mobile {
+        text-transform: none;
+      }
+      }
+     }
     
     &:hover {
         color: var(--color-dark);
@@ -127,6 +142,9 @@
 
     @include tablet {
       font-size: 14px;
+    }
+    @include mobile {
+      margin-bottom: 15px;
     }
   }
 }
