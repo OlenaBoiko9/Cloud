@@ -50,11 +50,11 @@
       color: var(--color-dark);
     }
 
-    &:hover {
+    &__input:hover {
       border-color: var(--color-light-green);
     }
 
-    &:focus {
+    &__input:focus {
       outline: none;
       border-color: var(--color-light-green);
       background-color: var(--color-light);

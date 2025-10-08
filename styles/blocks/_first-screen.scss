@@ -1,17 +1,11 @@
 .first-screen {
   display: block;
-  height: 694px;
-  background: url('../images/background1.png') center/cover no-repeat;
-
-  @include desktop {
-        height: 610px;
-      }
-  
-  @include tablet {
-        height: 456px;
-      } 
-      @include mobile {
-        height: 375px;
-      }
+  background: url('../images/background1.svg') center/cover no-repeat;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+ 
 }
+
+
 

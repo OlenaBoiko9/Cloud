@@ -6,6 +6,7 @@ body {
   line-height: 1.28;
   color: var(--color-dark);
   background-color: var(--color-light-alt);
+  overflow-x: hidden;
 }
 
 
@@ -31,10 +32,13 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  @include fluid-text(24, 18);
+  @include fluid-text(24, 16);
 }
 
 h3, .h3 {
-  @include fluid-text(18, 14);
+  @include fluid-text(24, 18);
+}
+h4, .h4 {
+  @include fluid-text(16, 14);
 }
 

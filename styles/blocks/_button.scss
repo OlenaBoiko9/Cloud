@@ -21,7 +21,7 @@
     background: var(--color-light-green);
   }
 
-&__transparent {
+&--transparent {
   max-width: 129px;
 
   @include tablet {

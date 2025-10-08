@@ -1,5 +1,6 @@
 .header {
   padding-top: 30px;
+  padding-bottom: 15px;
 
   @include tablet {
     padding-top: 20px;
@@ -52,6 +53,7 @@
        @include tablet {
          column-gap: 20px;
       }
+    }
 
     &-link {
       position: relative;
@@ -64,6 +66,7 @@
           width: 100%;
         }
       }
+    }
 
       &::after {
         content: '';
@@ -76,7 +79,5 @@
         background-color: currentColor;
         transition-duration: inherit;
       }
-    }
-  }  
 }
 }
