@@ -28,6 +28,27 @@
         gap: 15px;
       }
     }
+    
+    &-pricing {
+       --gridColumns: 3;
+
+    display: grid;
+    grid-template-columns: repeat(var(--gridColumns), 1fr);
+    gap: 30px;
+
+    @include desktop {
+      gap: 20px;
+    }
+
+    @include tablet {
+      gap: 10px;
+    }
+
+    @include mobile {
+        --gridColumns: 1;
+        gap: 15px;
+      }
+    } 
 }
 
 

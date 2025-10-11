@@ -1,0 +1,92 @@
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 503px;
+    padding: 35px 20px; 
+    background: var(--color-light);
+    border-radius: var(--border-radius-small);
+    box-shadow: -2px -3px 92px rgba(0, 0, 0, 0.1);
+
+    @include desktop {
+      padding: 35px 14px;
+    }
+
+     @include tablet {
+      min-height: 390px;
+      padding: 10px 10px;
+    }
+
+    @include mobile {
+      min-height: 330px;
+      padding:  15px 40px 15px 24px;
+      margin-inline: 10px;
+    }
+
+     @include mobile-s {
+         min-height: 345px;
+      }
+
+   &-title {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 4px;
+    
+      font-weight: 600;
+      color: var(--color-dark-gray);
+      font-size: 32px; 
+      margin-bottom: 16px;
+
+      @include mobile {
+        margin-bottom: 5px;
+      }
+
+    
+
+  span {
+    &:first-child {
+      align-self: flex-start;
+      font-size: 18px;
+      font-weight: 500;
+      transform: translateY(4px); 
+    }
+
+    &:last-child {
+      font-size: 18px;
+      align-self: flex-end;
+      transform: translateY(-6px); 
+    }
+  }
+
+  @include tablet {
+    font-size: 28px;
+
+    span:first-child {
+      font-size: 14px;
+    }
+
+    span:last-child {
+      font-size: 12px;
+    }
+  }
+
+  @include mobile {
+    font-size: 22px;
+  }
+}
+  &-description {
+    font-weight: 500;
+    color: var(--color-light-gray);
+    text-align: center;
+    margin-bottom: 30px;
+
+    @include mobile {
+      margin-bottom: 10px;
+    } 
+
+     @include mobile-s {
+        margin-bottom: 15px;
+      }
+}
+}

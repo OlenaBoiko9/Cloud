@@ -17,6 +17,16 @@
         padding: 14px 4px;
     }
 
+    @include mobile {
+        margin-inline: 10px;
+    }
+
+    @include mobile-s {
+        margin-inline: 0;
+    }
+
+
+
 
     &__title {
         font-size: 24px;
