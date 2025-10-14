@@ -94,11 +94,12 @@
     @include tablet {
       row-gap: 6px;
     }
-  
+
 
     &-features,
     &-numbers,
-    &-prising {
+    &-prising,
+    &-reviews {
       display: inline-flex;
       justify-content: center;
       align-items: center;
@@ -142,6 +143,7 @@
         text-transform: none;
       }
     }
+
       &-prising {
         max-width: 58px;
         margin-bottom: 24px;
@@ -156,8 +158,11 @@
        @include mobile-s {
         margin-bottom: 15px;
       }
-
-  }
+      }
+      
+      &-reviews {
+        max-width: 154px;
+      }
     
     &:hover {
         color: var(--color-dark);
@@ -190,4 +195,5 @@
     }
   }
 }
+
 
