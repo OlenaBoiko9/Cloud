@@ -5,9 +5,10 @@ align-items: center;
 row-gap: 15px;
 color: var(--color-dark-gray);
 background: transparent;
+margin-bottom: -30px;
 
 
-&__description {
+&-description {
 width: 100%;
 max-width: 920px;
 padding-inline: 42px;
