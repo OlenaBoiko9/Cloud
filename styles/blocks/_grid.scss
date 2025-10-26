@@ -1,8 +1,8 @@
 .grid {
-    --gridColumns: 3;
+    $gridColumns: 3;
 
     display: grid;
-    grid-template-columns: repeat(var(--gridColumns), 1fr);
+    grid-template-columns: repeat($gridColumns, 1fr);
     gap: 30px;
 
     @include desktop {
@@ -13,27 +13,27 @@
         gap: 10px;
       }  
       @include mobile {
-        --gridColumns: 1;
+        $gridColumns: 1;
         gap: 15px;
       }
     &-numbers {
-        --gridColumns: 4;
+        $gridColumns: 4;
 
     display: grid;
-    grid-template-columns: repeat(var(--gridColumns), 1fr);
+    grid-template-columns: repeat($gridColumns, 1fr);
     gap: 30px;
 
     @include mobile {
-        --gridColumns: 2;
+        $gridColumns: 2;
         gap: 15px;
       }
     }
     
     &-pricing {
-       --gridColumns: 3;
+       $gridColumns: 3;
 
     display: grid;
-    grid-template-columns: repeat(var(--gridColumns), 1fr);
+    grid-template-columns: repeat($gridColumns, 1fr);
     gap: 30px;
 
     @include desktop {
@@ -45,7 +45,7 @@
     }
 
     @include mobile {
-        --gridColumns: 1;
+        gridColumns: 1;
         gap: 15px;
       }
     } 

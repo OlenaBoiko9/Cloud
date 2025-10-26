@@ -6,8 +6,8 @@
    margin-inline: auto;
    padding: 62px 135px 64px 135px;
    column-gap: 40px;
-   background-color: var(--color-light-accent);
-   border-radius: var(--border-radius-small);
+   background-color: $color-light-accent;
+   border-radius: $border-radius-small;
    margin-bottom: 60px;
    position: relative;
 
@@ -36,7 +36,7 @@
  &__title {
     font-size: 28px;
     font-weight: 700;
-    color: var(--color-dark-gray);
+    color: $color-dark-gray;
     margin-bottom: 16px;
 
     @include desktop {
@@ -90,9 +90,9 @@
 }
 
 &-transparent {
-    color: var(--color-dark);
-    background: var(--color-light);
-    border: 1px solid var(--color-accent-alt);
+    color: $color-dark;
+    background: $color-light;
+    border: 1px solid $color-accent-alt;
   }
 
 &__decor {

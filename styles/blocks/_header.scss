@@ -32,7 +32,7 @@
   }
   &__menu {
     margin-right: auto;
-    font-family: var(--font-family-accent);
+    font-family: $font-family-accent;
 
     @include mobile {
       display: none;

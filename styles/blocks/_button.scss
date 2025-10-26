@@ -1,13 +1,13 @@
 .button {
 @include flex-center(true);
 
-  height: var(--button-height);
+  height: $button-height;
   padding-inline: 40px;
   font-size: 14px;
-  color: var(--color-light);
-  background: var( --gradient-primary);
-  border: var(--border);
-  border-radius: var(--border-radius);
+  color: $color-light;
+  background: $gradient-primary;
+  border: $border;
+  border-radius: $border-radius;
   max-width: 163px;
 
    @include tablet {
@@ -17,8 +17,8 @@
       }
 
  @include hover {
-    color: var(--color-dark);
-    background: var(--color-light-green);
+    color: $color-dark;
+    background: $color-light-green;
   }
 
 &--transparent {

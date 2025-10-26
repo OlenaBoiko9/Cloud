@@ -5,8 +5,8 @@
   row-gap: 120px;
   height: 100%;
   padding: 32px;
-  background: var(--color-light);
-  border-radius: var(--border-radius-large);
+  background: $color-light;
+  border-radius: $border-radius-large;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 
     @include tablet {
@@ -65,7 +65,7 @@
 
     &__company {
         font-size: 14px;
-        color: var(--color-light-gray);
+        color: $color-light-gray;
 
        @include mobile {
        font-size: 10px;

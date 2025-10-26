@@ -22,7 +22,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: var(--color-dark-alt);
+  background-color: $color-dark-alt;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -32,7 +32,7 @@
     height: 4px;
     border-radius: 2px;
     opacity: 1;
-    background-color: var(--color-accent-alt);
+    background-color: $color-accent-alt;
   }
 
   &:hover {

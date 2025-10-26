@@ -4,7 +4,7 @@
 
   position: relative;
   border-radius: 8px;
-  background: var(--gradient-primary); 
+  background: $gradient-primary; 
   height: 38px;
 
 
@@ -16,8 +16,8 @@
     left: 7px;
     width: 70%;
     height: 2px;
-    background: var(--color-light);
-    color: var(--color-light);
+    background: $color-light;
+    color: $color-light;
     border-radius: 5px;
   }
 

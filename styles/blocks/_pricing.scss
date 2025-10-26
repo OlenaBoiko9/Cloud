@@ -16,7 +16,7 @@
         font-size: 16px;
         font-weight: 500;
         text-align: start;
-        color: var(--color-light-gray);
+        color: $color-light-gray;
 
          @include desktop {
             font-size: 14px;
@@ -51,7 +51,7 @@
     }
     
     &-title { 
-        color: var(--color-accent-alt);
+        color: $color-accent-alt;
         margin-bottom: 15px;
 
         @include mobile {
